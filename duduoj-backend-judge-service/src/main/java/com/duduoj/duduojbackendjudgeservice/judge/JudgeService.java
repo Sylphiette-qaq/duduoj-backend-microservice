@@ -1,4 +1,4 @@
-package com.duduoj.duduojbackendjudgeservice.service;
+package com.duduoj.duduojbackendjudgeservice.judge;
 
 
 import com.yupi.duduOj.model.entity.QuestionSubmit;

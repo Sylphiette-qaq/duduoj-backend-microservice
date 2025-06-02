@@ -8,7 +8,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan("com.duduoj.duduojbackendjudgeservice.mapper")
 @EnableScheduling
 @ComponentScan("com.duduoj")
 @EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)

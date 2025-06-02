@@ -1,9 +1,6 @@
-package com.duduoj.duduojbackendjudgeservice.service.impl;
+package com.duduoj.duduojbackendjudgeservice.judge;
 
 import cn.hutool.json.JSONUtil;
-import com.duduoj.duduojbackendjudgeservice.service.JudgeService;
-import com.duduoj.duduojbackendjudgeservice.service.QuestionService;
-import com.duduoj.duduojbackendjudgeservice.service.QuestionSubmitService;
 import com.yupi.duduOj.common.ErrorCode;
 import com.yupi.duduOj.exception.BusinessException;
 import com.yupi.duduOj.judge.codesandbox.CodeSandbox;
@@ -17,6 +14,8 @@ import com.yupi.duduOj.model.dto.question.JudgeCase;
 import com.yupi.duduOj.model.entity.Question;
 import com.yupi.duduOj.model.entity.QuestionSubmit;
 import com.yupi.duduOj.model.enums.QuestionSubmitStatusEnum;
+import com.yupi.duduOj.service.QuestionService;
+import com.yupi.duduOj.service.QuestionSubmitService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
