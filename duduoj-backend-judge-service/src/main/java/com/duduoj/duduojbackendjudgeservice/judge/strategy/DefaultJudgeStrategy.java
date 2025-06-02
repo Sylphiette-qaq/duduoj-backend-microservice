@@ -1,11 +1,12 @@
 package com.duduoj.duduojbackendjudgeservice.judge.strategy;
 
 import cn.hutool.json.JSONUtil;
-import com.yupi.duduOj.judge.codesandbox.model.JudgeInfo;
-import com.yupi.duduOj.model.dto.question.JudgeCase;
-import com.yupi.duduOj.model.dto.question.JudgeConfig;
-import com.yupi.duduOj.model.entity.Question;
-import com.yupi.duduOj.model.enums.JudgeInfoMessageEnum;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.JudgeInfo;
+import com.duduoj.duduojbackendmodule.model.dto.question.JudgeCase;
+import com.duduoj.duduojbackendmodule.model.dto.question.JudgeConfig;
+import com.duduoj.duduojbackendmodule.model.entity.Question;
+import com.duduoj.duduojbackendmodule.model.enums.JudgeInfoMessageEnum;
+
 
 import java.util.List;
 

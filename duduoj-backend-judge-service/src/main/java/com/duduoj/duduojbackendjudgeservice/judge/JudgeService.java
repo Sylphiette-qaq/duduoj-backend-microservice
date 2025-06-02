@@ -1,7 +1,7 @@
 package com.duduoj.duduojbackendjudgeservice.judge;
 
 
-import com.yupi.duduOj.model.entity.QuestionSubmit;
+import com.duduoj.duduojbackendmodule.model.entity.QuestionSubmit;
 
 public interface JudgeService {
 

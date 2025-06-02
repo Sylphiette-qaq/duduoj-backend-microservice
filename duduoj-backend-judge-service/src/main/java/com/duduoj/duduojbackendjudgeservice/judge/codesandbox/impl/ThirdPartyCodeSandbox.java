@@ -1,8 +1,9 @@
 package com.duduoj.duduojbackendjudgeservice.judge.codesandbox.impl;
 
-import com.yupi.duduOj.judge.codesandbox.CodeSandbox;
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeRequest;
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeResponse;
+
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.CodeSandbox;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeRequest;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeResponse;
 
 /**
  * 第三方代码沙箱

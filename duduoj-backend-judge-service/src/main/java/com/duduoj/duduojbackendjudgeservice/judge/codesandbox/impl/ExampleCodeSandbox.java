@@ -1,9 +1,11 @@
 package com.duduoj.duduojbackendjudgeservice.judge.codesandbox.impl;
 
-import com.yupi.duduOj.judge.codesandbox.CodeSandbox;
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeRequest;
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeResponse;
-import com.yupi.duduOj.judge.codesandbox.model.JudgeInfo;
+
+
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.CodeSandbox;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeRequest;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeResponse;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.JudgeInfo;
 
 import java.util.ArrayList;
 

@@ -1,21 +1,21 @@
 package com.duduoj.duduojbackendjudgeservice.judge;
 
 import cn.hutool.json.JSONUtil;
-import com.yupi.duduOj.common.ErrorCode;
-import com.yupi.duduOj.exception.BusinessException;
-import com.yupi.duduOj.judge.codesandbox.CodeSandbox;
-import com.yupi.duduOj.judge.codesandbox.CodeSandboxFactory;
-import com.yupi.duduOj.judge.codesandbox.CodeSandboxProxy;
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeRequest;
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeResponse;
-import com.yupi.duduOj.judge.codesandbox.model.JudgeInfo;
-import com.yupi.duduOj.judge.strategy.JudgeContext;
-import com.yupi.duduOj.model.dto.question.JudgeCase;
-import com.yupi.duduOj.model.entity.Question;
-import com.yupi.duduOj.model.entity.QuestionSubmit;
-import com.yupi.duduOj.model.enums.QuestionSubmitStatusEnum;
-import com.yupi.duduOj.service.QuestionService;
-import com.yupi.duduOj.service.QuestionSubmitService;
+import com.duduoj.duduojbackendcommon.common.ErrorCode;
+import com.duduoj.duduojbackendcommon.exception.BusinessException;
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.CodeSandbox;
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.CodeSandboxFactory;
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.CodeSandboxProxy;
+import com.duduoj.duduojbackendjudgeservice.judge.strategy.JudgeContext;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeRequest;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeResponse;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.JudgeInfo;
+import com.duduoj.duduojbackendmodule.model.dto.question.JudgeCase;
+import com.duduoj.duduojbackendmodule.model.entity.QuestionSubmit;
+import com.duduoj.duduojbackendmodule.model.enums.QuestionSubmitStatusEnum;
+import com.duduoj.duduojbackendserviceclient.service.QuestionService;
+import com.duduoj.duduojbackendserviceclient.service.QuestionSubmitService;
+import com.duduoj.duduojbackendmodule.model.entity.Question;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

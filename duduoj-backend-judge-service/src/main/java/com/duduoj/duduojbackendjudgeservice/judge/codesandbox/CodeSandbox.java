@@ -1,7 +1,8 @@
 package com.duduoj.duduojbackendjudgeservice.judge.codesandbox;
 
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeRequest;
-import com.yupi.duduOj.judge.codesandbox.model.ExecuteCodeResponse;
+
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeRequest;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.ExecuteCodeResponse;
 
 public interface CodeSandbox {
 

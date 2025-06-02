@@ -1,6 +1,7 @@
 package com.duduoj.duduojbackendjudgeservice.judge.strategy;
 
-import com.yupi.duduOj.judge.codesandbox.model.JudgeInfo;
+
+import com.duduoj.duduojbackendmodule.model.codeSandbox.JudgeInfo;
 
 /**
  * 默认判题策略

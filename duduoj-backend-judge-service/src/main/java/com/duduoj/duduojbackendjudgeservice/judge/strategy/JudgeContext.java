@@ -1,9 +1,10 @@
 package com.duduoj.duduojbackendjudgeservice.judge.strategy;
 
-import com.yupi.duduOj.judge.codesandbox.model.JudgeInfo;
-import com.yupi.duduOj.model.dto.question.JudgeCase;
-import com.yupi.duduOj.model.entity.Question;
-import com.yupi.duduOj.model.entity.QuestionSubmit;
+
+import com.duduoj.duduojbackendmodule.model.codeSandbox.JudgeInfo;
+import com.duduoj.duduojbackendmodule.model.dto.question.JudgeCase;
+import com.duduoj.duduojbackendmodule.model.entity.Question;
+import com.duduoj.duduojbackendmodule.model.entity.QuestionSubmit;
 import lombok.Data;
 
 import java.util.List;

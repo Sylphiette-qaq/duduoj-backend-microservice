@@ -1,9 +1,10 @@
 package com.duduoj.duduojbackendjudgeservice.judge;
 
-import com.yupi.duduOj.judge.codesandbox.model.JudgeInfo;
-import com.yupi.duduOj.judge.strategy.DefaultJudgeStrategy;
-import com.yupi.duduOj.judge.strategy.JudgeContext;
-import com.yupi.duduOj.model.entity.QuestionSubmit;
+
+import com.duduoj.duduojbackendjudgeservice.judge.strategy.DefaultJudgeStrategy;
+import com.duduoj.duduojbackendjudgeservice.judge.strategy.JudgeContext;
+import com.duduoj.duduojbackendmodule.model.codeSandbox.JudgeInfo;
+import com.duduoj.duduojbackendmodule.model.entity.QuestionSubmit;
 import org.springframework.stereotype.Service;
 
 /**

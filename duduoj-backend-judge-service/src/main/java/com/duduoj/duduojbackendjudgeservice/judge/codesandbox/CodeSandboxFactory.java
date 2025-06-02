@@ -1,8 +1,9 @@
 package com.duduoj.duduojbackendjudgeservice.judge.codesandbox;
 
-import com.yupi.duduOj.judge.codesandbox.impl.ExampleCodeSandbox;
-import com.yupi.duduOj.judge.codesandbox.impl.RemoteCodeSandbox;
-import com.yupi.duduOj.judge.codesandbox.impl.ThirdPartyCodeSandbox;
+
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.impl.ExampleCodeSandbox;
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.impl.RemoteCodeSandbox;
+import com.duduoj.duduojbackendjudgeservice.judge.codesandbox.impl.ThirdPartyCodeSandbox;
 
 /**
  * 代码沙箱工厂（根据字符串参数创建指定的代码沙箱实例）
