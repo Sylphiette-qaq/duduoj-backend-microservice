@@ -3,7 +3,7 @@
 # @from <a href="https://yupi.icu">编程导航知识星球</a>
 spring:
   application:
-    name: duduOj-backend-question-service
+    name: duduoj-backend-question-service
   # 默认 dev 环境
   profiles:
     active: dev
@@ -34,15 +34,19 @@ spring:
     multipart:
       # 大小限制
       max-file-size: 10MB
+  cloud:
+    nacos:
+      serverAddr: 127.0.0.1:8848
 server:
   address: 0.0.0.0
   port: 8103
   servlet:
-    context-path: /api
+    context-path: /api/question
     # cookie 30 天过期
     session:
       cookie:
         max-age: 2592000
+        path: /api
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
@@ -55,13 +59,5 @@ mybatis-plus:
 # 接口文档配置
 knife4j:
   enable: true
-  openapi:
-    title: "接口文档"
-    version: 1.0
-    group:
-      default:
-        api-rule: package
-        api-rule-resources:
-          - com.yupi.duduOj.controller
 codesandbox:
   type: remote

@@ -19,8 +19,8 @@ import com.duduoj.duduojbackendmodule.model.vo.QuestionSubmitVO;
 import com.duduoj.duduojbackendquestionservice.mapper.QuestionSubmitMapper;
 import com.duduoj.duduojbackendquestionservice.service.QuestionService;
 import com.duduoj.duduojbackendquestionservice.service.QuestionSubmitService;
-import com.duduoj.duduojbackendserviceclient.service.JudgeService;
-import com.duduoj.duduojbackendserviceclient.service.UserService;
+import com.duduoj.duduojbackendserviceclient.service.JudgeFeignClient;
+import com.duduoj.duduojbackendserviceclient.service.UserFeignClient;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.annotation.Lazy;
@@ -44,11 +44,11 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
     private QuestionService questionService;
 
     @Resource
-    private UserService userService;
+    private UserFeignClient userFeignClient;
 
     @Resource
     @Lazy
-    private JudgeService judgeService;
+    private JudgeFeignClient judgeFeignClient;
 
     /**
      * 提交题目
@@ -89,7 +89,7 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
         Long questionSubmitId = questionSubmit.getId();
         //todo 执行判题
         CompletableFuture.runAsync(() -> {
-            judgeService.doJudge(questionSubmitId);
+            judgeFeignClient.doJudge(questionSubmitId);
         });
         return questionSubmitId;
     }
@@ -131,7 +131,7 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
         QuestionSubmitVO questionSubmitVO = QuestionSubmitVO.objToVo(questionSubmit);
         long userId = loginUser.getId();
         //处理脱敏
-        if(userId != questionSubmitVO.getUserId() && !userService.isAdmin(loginUser)){
+        if(userId != questionSubmitVO.getUserId() && !userFeignClient.isAdmin(loginUser)){
             questionSubmitVO.setCode(null);
         }
         return questionSubmitVO;

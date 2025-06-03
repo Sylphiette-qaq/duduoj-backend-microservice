@@ -34,7 +34,7 @@ import static com.duduoj.duduojbackenduserservice.service.impl.UserServiceImpl.S
  * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/")
 @Slf4j
 public class UserController {
 
